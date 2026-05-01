@@ -1,103 +1,127 @@
-import React from 'react';
-import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
+import React, { useContext } from 'react';
+import {
+  Image,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import { Link } from 'expo-router';
- 
+
+import { AuthContext } from '../contexts/AuthContext';
+
+const categories = [
+  { title: 'Cafés', href: '/cafes' },
+  { title: 'Bebidas', href: '/bebidas' },
+  { title: 'Salgados', href: '/salgados' },
+  { title: 'Doces', href: '/doces' },
+  { title: 'Outros', href: '/outros' },
+];
+
 export default function Index() {
-    return (
-    <ScrollView style={styles.container}>
-      {/* A imagem logoFiap.png precisa estar dentro da pasta 'assets' do seu projeto */}
-    <Image
-        source={require('../assets/logoFiap.png')}
-        style={styles.logo}
-    />
- 
-    <View style={styles.box}>
-        <Text style={styles.h1}>Bem-vindo ao Fiap-Café!</Text>
-        <Text style={styles.h3}>Escolha a área que deseja ver.</Text>
-   
-        {/* O componente Link do Expo substitui a tag <a> do HTML */}
-        <Link href="/cafes" style={styles.link}>
-    <Text style={styles.h2}>Cafés</Text>
-        </Link>
-        <Link href="/bebidas" style={styles.link}>
-    <Text style={styles.h2}>Bebidas</Text>
-        </Link>
-        <Link href="/salgados" style={styles.link}>
-    <Text style={styles.h2}>Salgados</Text>
-        </Link>
-        <Link href="/doces" style={styles.link}>
-    <Text style={styles.h2}>Doces</Text>
-        </Link>
-        <Link href="/outros" style={styles.link}>
-    <Text style={styles.h2}>Outros</Text>
-        </Link>
-    </View>
- 
-    <View style={styles.footer}>
+  const { user, logout } = useContext(AuthContext);
+
+  return (
+    <ScrollView style={styles.container} contentContainerStyle={styles.content}>
+      <Image source={require('../assets/logoFiap.png')} style={styles.logo} />
+
+      <View style={styles.headerBox}>
+        <Text style={styles.h1}>Olá, {user?.name?.split(' ')[0]}!</Text>
+        <Text style={styles.h3}>Escolha uma categoria para pedir.</Text>
+
+        <TouchableOpacity onPress={logout} style={styles.logoutButton}>
+          <Text style={styles.logoutText}>Sair</Text>
+        </TouchableOpacity>
+      </View>
+
+      <View style={styles.categoryList}>
+        {categories.map(category => (
+          <Link key={category.href} href={category.href} asChild>
+            <TouchableOpacity style={styles.categoryButton}>
+              <Text style={styles.categoryText}>{category.title}</Text>
+            </TouchableOpacity>
+          </Link>
+        ))}
+      </View>
+
+      <View style={styles.footer}>
         <Text style={styles.footerText}>
-    Trabalho de cross-plataform 2026{"\n"}
-    2CCPG{"\n"}
-    Vitor Komura RM563694{"\n"}
-    Caio Castelão RM563630{"\n"}
-    Mirella Mascarenhas RM562092{"\n"}
-    Guilherme Tamai RM563276{"\n"}
-    André Gouveia RM564219{"\n"}
-    André Nobrega RM561754
+          Fiap-Café • pedidos rápidos para reduzir filas na cantina
         </Text>
-    </View>
+      </View>
     </ScrollView>
-);
+  );
 }
- 
+
 const styles = StyleSheet.create({
-container: {
+  container: {
     flex: 1,
-    backgroundColor: 'rgb(43, 42, 42)',
+    backgroundColor: '#2b2a2a',
+  },
+  content: {
     paddingHorizontal: 20,
-},
-logo: {
-    height: 150,
+    paddingBottom: 80,
+  },
+  logo: {
+    height: 140,
     width: '100%',
     resizeMode: 'contain',
-    marginVertical: 40,
-},
-box: {
-    backgroundColor: 'rgb(237, 20, 91)',
-    borderRadius: 50,
+    marginTop: 36,
+    marginBottom: 18,
+  },
+  headerBox: {
+    backgroundColor: '#3a3a3a',
+    borderRadius: 24,
+    padding: 18,
+    marginBottom: 20,
+    borderWidth: 1,
+    borderColor: '#ff2d6f',
+  },
+  h1: {
+    color: '#ff2d6f',
+    fontSize: 28,
+    fontWeight: 'bold',
+  },
+  h3: {
+    color: '#cfcfcf',
+    fontSize: 15,
+    marginTop: 6,
+  },
+  logoutButton: {
+    alignSelf: 'flex-start',
+    marginTop: 16,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
+    borderRadius: 18,
+    borderWidth: 1,
+    borderColor: '#ff2d6f',
+  },
+  logoutText: {
+    color: '#ff2d6f',
+    fontWeight: 'bold',
+  },
+  categoryList: {
+    gap: 14,
+  },
+  categoryButton: {
+    backgroundColor: '#ff2d6f',
     padding: 20,
-    alignItems: 'center',
-    justifyContent: 'center',
-    minHeight: 450,
-},
-h1: {
-    color: 'white',
-    fontSize: 24,
+    borderRadius: 22,
+    elevation: 3,
+  },
+  categoryText: {
+    color: '#ffffff',
+    fontSize: 22,
     fontWeight: 'bold',
     textAlign: 'center',
-    marginBottom: 10,
-},
-h3: {
-    color: 'white',
-    fontSize: 16,
-    textAlign: 'center',
-    marginBottom: 30,
-},
-h2: {
-    color: 'white',
-    fontSize: 22,
-    fontWeight: '600',
-    textAlign: 'center',
-},
-link: {
-    marginVertical: 10, // Dá um respiro entre os botões de link
-},
-footer: {
-    paddingVertical: 60,
+  },
+  footer: {
+    paddingVertical: 40,
     alignItems: 'center',
-},
-footerText: {
-    color: 'rgba(255, 255, 255, 0.367)',
+  },
+  footerText: {
+    color: 'rgba(255,255,255,0.45)',
     textAlign: 'center',
-    lineHeight: 22, // Melhora a leitura dos nomes da equipe
-},
+  },
 });
