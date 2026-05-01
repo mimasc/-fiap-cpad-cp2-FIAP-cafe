@@ -64,7 +64,6 @@ export default function Layout() {
     </AuthProvider>
   );
 }
-
 const styles = StyleSheet.create({
   loading: {
     flex: 1,
