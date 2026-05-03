@@ -4,7 +4,7 @@ Aplicativo desenvolvido para simular um sistema de pedidos e retiradas na cantin
 
 A operação escolhida foi a da **cantina da FIAP**, justamente por ser um espaço de grande fluxo de estudantes e por representar bem a necessidade de otimizar o atendimento.
 
-🔄 Evolução em relação ao CP1
+# 🔄 Evolução em relação ao CP1
 
 Em comparação com a versão anterior (CP1), o projeto evoluiu significativamente:
 
@@ -17,7 +17,7 @@ Agora:
 - 🧭 Navegação protegida (usuário precisa estar logado)
 - 📂 Estrutura modular e escalável
 
-🚀 Funcionalidades
+# 🚀 Funcionalidades
 - Cadastro de usuário
 - Login com validação de credenciais
 - Persistência de sessão (usuário permanece logado)
