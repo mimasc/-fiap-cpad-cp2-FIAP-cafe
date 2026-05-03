@@ -4,7 +4,7 @@ Aplicativo desenvolvido para simular um sistema de pedidos e retiradas na cantin
 
 A operação escolhida foi a da **cantina da FIAP**, justamente por ser um espaço de grande fluxo de estudantes e por representar bem a necessidade de otimizar o atendimento.
 
-# 🔄 Evolução em relação ao CP1
+## 🔄 Evolução em relação ao CP1
 
 Em comparação com a versão anterior (CP1), o projeto evoluiu significativamente:
 
@@ -17,7 +17,7 @@ Agora:
 - 🧭 Navegação protegida (usuário precisa estar logado)
 - 📂 Estrutura modular e escalável
 
-# 🚀 Funcionalidades
+## 🚀 Funcionalidades
 - Cadastro de usuário
 - Login com validação de credenciais
 - Persistência de sessão (usuário permanece logado)
@@ -112,12 +112,14 @@ A autenticação do app foi implementada utilizando o expo-secure-store para arm
 
 ## 🔮 Próximos Passos
 Com mais tempo de desenvolvimento, o grupo poderia implementar melhorias como:  
-- Controle de quantidade de itens no carrinho.  
-- Persistência de dados usando AsyncStorage ou banco local.  
-- Integração com sistemas de pagamento reais.  
-- Feedback visual mais moderno (toasts em vez de alertas).  
-- Autenticação de usuários para personalizar pedidos.
-- Funcionamento de outras telas, além do café.
 
-   ---
+Controle de quantidade no carrinho (+ / -);
+Alerta ao limpar carrinho;
+Carrinho separado por usuário;
+Histórico de pedidos;
+Animações na interface;
+Feedback visual (toast melhorado);
+Imagens dos produtos;
+
+ ---
   
