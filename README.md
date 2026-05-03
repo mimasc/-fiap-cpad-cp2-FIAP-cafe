@@ -69,6 +69,18 @@ A navegação foi organizada com expo-router, que permite estruturar as rotas de
 
 ---
 
+
+## ⭐ Diferenciais Técnicos Implementados
+
+Além do uso do Expo SecureStore para armazenar a sessão do usuário de forma mais segura, o app também implementa busca em tempo real nas categorias.
+
+A busca em tempo real foi escolhida porque o objetivo do Fiap-Café é reduzir o tempo de pedido na cantina. Com o filtro dinâmico, o usuário encontra rapidamente cafés, bebidas, salgados e doces sem precisar rolar toda a lista.
+
+A autenticação do app foi implementada utilizando o expo-secure-store para armazenar a sessão do usuário de forma segura no dispositivo. A experiência em “tempo real” é garantida pelo uso de estado global (Context) e re-renderização imediata da interface ao adicionar/remover itens.
+
+---
+
+
 ## 🔮 Próximos Passos
 Com mais tempo de desenvolvimento, o grupo poderia implementar melhorias como:  
 - Controle de quantidade de itens no carrinho.  
