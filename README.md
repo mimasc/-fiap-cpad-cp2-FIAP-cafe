@@ -12,31 +12,31 @@ Em comparação com a versão anterior (CP1), o projeto evoluiu significativamen
 
 Antes: aplicação simples com carrinho local
 Agora:
-🔐 Sistema completo de autenticação (login/cadastro)
-💾 Persistência de dados com AsyncStorage e SecureStore
-🧠 Uso de Context API para gerenciamento global de estado
-🧭 Navegação protegida (usuário precisa estar logado)
-📂 Estrutura modular e escalável
+- 🔐 Sistema completo de autenticação (login/cadastro)
+- 💾 Persistência de dados com AsyncStorage e SecureStore
+- 🧠 Uso de Context API para gerenciamento global de estado
+- 🧭 Navegação protegida (usuário precisa estar logado)
+- 📂 Estrutura modular e escalável
 
 ---
 
 🚀 Funcionalidades
-Cadastro de usuário
-Login com validação de credenciais
-Persistência de sessão (usuário permanece logado)
-Navegação entre categorias:
-Cafés
-Bebidas
-Salgados
-Doces
-Outros
-Adição de produtos ao carrinho
-Remoção de itens do carrinho
-Limpeza completa do carrinho
-Cálculo automático do valor total
-Feedback visual ao adicionar produtos
-Finalização de pedido simulada
-Logout do usuário
+- Cadastro de usuário
+- Login com validação de credenciais
+- Persistência de sessão (usuário permanece logado)
+- Navegação entre categorias:
+- Cafés
+- Bebidas
+- Salgados
+- Doces
+- Outros
+- Adição de produtos ao carrinho
+- Remoção de itens do carrinho
+- Limpeza completa do carrinho
+- Cálculo automático do valor total
+- Feedback visual ao adicionar produtos
+- Finalização de pedido simulada
+- Logout do usuário
 
 ---
 
