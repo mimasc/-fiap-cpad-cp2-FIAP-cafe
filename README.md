@@ -113,7 +113,7 @@ A autenticação do app foi implementada utilizando o expo-secure-store para arm
 ## 🔮 Próximos Passos
 Com mais tempo de desenvolvimento, o grupo poderia implementar melhorias como:  
 
-Controle de quantidade no carrinho (+ / -);
+- Controle de quantidade no carrinho (+ / -);
 - Alerta ao limpar carrinho;
 - Carrinho separado por usuário;
 - Histórico de pedidos;
