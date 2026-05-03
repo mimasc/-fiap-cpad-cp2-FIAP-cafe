@@ -21,10 +21,10 @@ export default function CategoryScreen({ title, description, products }) {
 
     const timer = setTimeout(() => {
       setFeedback('');
-    }, 2200);
+    }, 2000);
 
     return () => clearTimeout(timer);
-  }, [feedback]);
+  }, [feedback, setFeedback]);
 
   return (
     <ScrollView style={styles.body} contentContainerStyle={styles.content}>
@@ -75,10 +75,10 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   logo: {
-    height: 120,
+    height: 95,
     width: '100%',
     resizeMode: 'contain',
-    marginBottom: 20,
+    marginBottom: 18,
   },
   title: {
     color: '#ff2d6f',
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
     fontSize: 15,
   },
   feedback: {
-    backgroundColor: '#1f8f4d',
+    backgroundColor: '#198754',
     padding: 12,
     borderRadius: 14,
     marginBottom: 16,

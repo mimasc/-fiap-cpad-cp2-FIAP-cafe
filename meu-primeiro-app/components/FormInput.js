@@ -9,6 +9,7 @@ export default function FormInput({
   secureTextEntry = false,
   keyboardType = 'default',
   autoCapitalize = 'none',
+  placeholder = '',
 }) {
   return (
     <View style={styles.container}>
@@ -21,6 +22,11 @@ export default function FormInput({
         secureTextEntry={secureTextEntry}
         keyboardType={keyboardType}
         autoCapitalize={autoCapitalize}
+        autoCorrect={false}
+        autoComplete="off"
+        textContentType="none"
+        allowFontScaling={false}
+        placeholder={placeholder}
         placeholderTextColor="#999"
       />
 
@@ -43,9 +49,10 @@ const styles = StyleSheet.create({
     borderRadius: 14,
     paddingHorizontal: 14,
     paddingVertical: 12,
-    color: '#222',
+    color: '#222222',
     borderWidth: 2,
     borderColor: 'transparent',
+    fontSize: 16,
   },
   inputError: {
     borderColor: '#ff4d4d',
@@ -54,5 +61,6 @@ const styles = StyleSheet.create({
     color: '#ff4d4d',
     marginTop: 5,
     fontSize: 13,
+    fontWeight: '500',
   },
 });
