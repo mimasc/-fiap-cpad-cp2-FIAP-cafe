@@ -90,7 +90,7 @@ Criar AVD (Pixel 5 ou similar)
 <img width="266" height="597" alt="image" src="https://github.com/user-attachments/assets/e69fab17-65e1-4b39-8bc2-05518ad4b787" />
 
 
--Link do vídeo-explicação do aplicativo:
+-Link do vídeo-explicação do aplicativo: https://youtu.be/urcsJ7Y5V5Y?si=UO7ou4WJa0M3zobJ
 
 
 ---
