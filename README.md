@@ -91,7 +91,7 @@ Criar AVD (Pixel 5 ou similar)
 
 
 -Link do vídeo-explicação do aplicativo:
-https://www.youtube.com/watch?v=7Ed-2dSqLOs
+
 
 ---
 
