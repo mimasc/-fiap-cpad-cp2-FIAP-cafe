@@ -63,7 +63,7 @@ Criar AVD (Pixel 5 ou similar)
 **Passo a passo:**  
 1. Clonar o repositório:  
    git clone <https://github.com/mimasc/-fiap-cpad-cp1-FIAP-cafe>  
-   cd -fiap-cpad-cp1-FIAp-cafe  
+   cd -fiap-cpad-cp2-FIAP-cafe  
    cd meu-primeiro-app   
 3. Instalar dependências:  
    npm install
