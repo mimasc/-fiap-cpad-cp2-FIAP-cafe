@@ -73,13 +73,22 @@ Criar AVD (Pixel 5 ou similar)
 
 ---
 
-## 🎬 Demonstração
+## 🎬 Demonstração Visual
 -Prints das telas do aplicativo:
 
-<img width="252" height="576" alt="image" src="https://github.com/user-attachments/assets/297c384b-b476-4ddf-aab1-58f9b96d3094" />
-<img width="254" height="578" alt="image" src="https://github.com/user-attachments/assets/f1463b18-9955-4fe7-9ac7-5e084efed51e" />
-<img width="253" height="565" alt="image" src="https://github.com/user-attachments/assets/5225bdbb-9e69-408f-b8b7-ac7683af43a1" />
-<img width="249" height="571" alt="image" src="https://github.com/user-attachments/assets/93b8ab75-8c8a-4972-b70b-d4e2bb854d28" />
+<img width="259" height="599" alt="image" src="https://github.com/user-attachments/assets/b64eaec4-0eb4-47fe-af84-b8b37b1c5547" />
+<img width="271" height="598" alt="image" src="https://github.com/user-attachments/assets/e52890cd-f7a2-484d-8843-bad3452479a4" />
+<img width="272" height="592" alt="image" src="https://github.com/user-attachments/assets/0a1a9af0-2160-421f-831f-e25430f736b7" />
+<img width="267" height="596" alt="image" src="https://github.com/user-attachments/assets/1a45d50b-ea81-41c4-976b-4fa0fa534e86" />
+<img width="269" height="596" alt="image" src="https://github.com/user-attachments/assets/28dd4e7e-07fc-46cd-9fba-c58a799fc4f6" />
+<img width="266" height="604" alt="image" src="https://github.com/user-attachments/assets/292cd5a7-2dca-477c-b50a-1b31e4137203" />
+<img width="267" height="593" alt="image" src="https://github.com/user-attachments/assets/4a3b96b8-7413-49d6-8d49-4553d55ac171" />
+<img width="269" height="598" alt="image" src="https://github.com/user-attachments/assets/28aa18bf-3644-4165-bd07-d36af06a5fd7" />
+<img width="274" height="594" alt="image" src="https://github.com/user-attachments/assets/0e4d0fd8-87b1-47df-9852-0acbb7ce2969" />
+<img width="266" height="596" alt="image" src="https://github.com/user-attachments/assets/091e0efe-e588-4c63-ba83-065695205e53" />
+<img width="269" height="597" alt="image" src="https://github.com/user-attachments/assets/85b732cc-f4d3-4c1c-b24d-b61b7a6db897" />
+<img width="266" height="597" alt="image" src="https://github.com/user-attachments/assets/e69fab17-65e1-4b39-8bc2-05518ad4b787" />
+
 
 -Link do vídeo-explicação do aplicativo:
 https://www.youtube.com/watch?v=7Ed-2dSqLOs
@@ -151,7 +160,6 @@ Com mais tempo de desenvolvimento, o grupo poderia implementar melhorias como:
 - Histórico de pedidos;
 - Animações na interface;
 - Feedback visual (toast melhorado);
-- Imagens dos produtos;
 
  ---
   
