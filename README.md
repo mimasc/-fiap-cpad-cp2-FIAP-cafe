@@ -4,7 +4,7 @@ Aplicativo desenvolvido para simular um sistema de pedidos e retiradas na cantin
 
 A operação escolhida foi a da **cantina da FIAP**, justamente por ser um espaço de grande fluxo de estudantes e por representar bem a necessidade de otimizar o atendimento.
 
-## 🔄 Evolução em relação ao CP1
+### 🔄 Evolução em relação ao CP1
 
 Em comparação com a versão anterior (CP1), o projeto evoluiu significativamente:
 
@@ -17,7 +17,7 @@ Agora:
 - 🧭 Navegação protegida (usuário precisa estar logado)
 - 📂 Estrutura modular e escalável
 
-## 🚀 Funcionalidades
+### 🚀 Funcionalidades
 - Cadastro de usuário
 - Login com validação de credenciais
 - Persistência de sessão (usuário permanece logado)
@@ -88,14 +88,14 @@ https://www.youtube.com/watch?v=7Ed-2dSqLOs
 
 ## 🛠️ Decisões Técnicas
 
-## 📂 Estrutura do Projeto
+### 📂 Estrutura do Projeto
 - app/ → telas do aplicativo
 - components/ → componentes reutilizáveis
 - contexts/ → gerenciamento de estado global
 - data/ → dados dos produtos
 - utils/ → validações
   
-## 🧠 Context API
+### 🧠 Context API
 - AuthContext
   - Gerencia autenticação do usuário
   - Controla login, cadastro e logout
@@ -105,7 +105,7 @@ https://www.youtube.com/watch?v=7Ed-2dSqLOs
   - Calcula total automaticamente
   - Controla feedback visual
 
-## 🔐 Autenticação
+### 🔐 Autenticação
 
 - Implementada com armazenamento local:
   - Usuários → AsyncStorage `(@fiap_cafe:users)`
@@ -113,14 +113,14 @@ https://www.youtube.com/watch?v=7Ed-2dSqLOs
 - Login valida e-mail e senha cadastrados
 - Sessão persiste mesmo após fechar o app
   
-## 💾 Persistência (AsyncStorage)
+### 💾 Persistência (AsyncStorage)
 - Carrinho salvo com chave:
   `@fiap_cafe:cart`
 Dados persistidos:
   - Itens adicionados ao carrinho
   - Mantidos mesmo após reiniciar o app
 
-## 🧭 Navegação Protegida
+### 🧭 Navegação Protegida
 - Implementada no _layout.js
 - Usuário não autenticado → redirecionado para login
 - Usuário autenticado → acesso liberado
