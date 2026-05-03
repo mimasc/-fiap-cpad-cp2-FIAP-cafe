@@ -87,14 +87,46 @@ https://www.youtube.com/watch?v=7Ed-2dSqLOs
 ---
 
 ## 🛠️ Decisões Técnicas
-O projeto foi estruturado de forma modular, separando as telas principais (index.js e carrinho.js) e utilizando um *contexto global* (CartContext.js) para gerenciar o estado do carrinho. O layout principal (_layout.js) garante que o carrinho esteja acessível em todas as rotas e adiciona um botão flutuante para facilitar a navegação.
 
-Os principais *hooks* utilizados foram:  
-- useState → responsável por controlar o estado do carrinho.  
-- useContext → utilizado para compartilhar o carrinho entre diferentes telas.  
-- useRouter → empregado para gerenciar a navegação entre rotas.  
+## 📂 Estrutura do Projeto
+- app/ → telas do aplicativo
+- components/ → componentes reutilizáveis
+- contexts/ → gerenciamento de estado global
+- data/ → dados dos produtos
+- utils/ → validações
+  
+## 🧠 Context API
+- AuthContext
+  - Gerencia autenticação do usuário
+  - Controla login, cadastro e logout
+  - Mantém sessão ativa
+- CartContext
+  - Gerencia itens do carrinho
+  - Calcula total automaticamente
+  - Controla feedback visual
 
-A navegação foi organizada com expo-router, que permite estruturar as rotas de forma simples e intuitiva, baseada na hierarquia de arquivos. O botão flutuante garante acesso rápido ao carrinho em qualquer tela.
+## 🔐 Autenticação
+
+- Implementada com armazenamento local:
+  - Usuários → AsyncStorage `(@fiap_cafe:users)`
+  - Sessão → SecureStore `(fiap_cafe_session)`
+- Login valida e-mail e senha cadastrados
+- Sessão persiste mesmo após fechar o app
+  
+## 💾 Persistência (AsyncStorage)
+- Carrinho salvo com chave:
+  `@fiap_cafe:cart`
+Dados persistidos:
+  - Itens adicionados ao carrinho
+  - Mantidos mesmo após reiniciar o app
+
+## 🧭 Navegação Protegida
+- Implementada no _layout.js
+- Usuário não autenticado → redirecionado para login
+- Usuário autenticado → acesso liberado
+- Uso de:
+  - `useSegments`
+  - `useRouter`
 
 ---
 
