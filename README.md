@@ -4,21 +4,18 @@ Aplicativo desenvolvido para simular um sistema de pedidos e retiradas na cantin
 
 A operação escolhida foi a da **cantina da FIAP**, justamente por ser um espaço de grande fluxo de estudantes e por representar bem a necessidade de otimizar o atendimento.
 
----
-
 🔄 Evolução em relação ao CP1
 
 Em comparação com a versão anterior (CP1), o projeto evoluiu significativamente:
 
 Antes: aplicação simples com carrinho local
+
 Agora:
 - 🔐 Sistema completo de autenticação (login/cadastro)
 - 💾 Persistência de dados com AsyncStorage e SecureStore
 - 🧠 Uso de Context API para gerenciamento global de estado
 - 🧭 Navegação protegida (usuário precisa estar logado)
 - 📂 Estrutura modular e escalável
-
----
 
 🚀 Funcionalidades
 - Cadastro de usuário
