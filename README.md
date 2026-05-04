@@ -49,28 +49,31 @@ Agora:
 
 ## 🚀 Como Rodar o Projeto
 Para rodar o projeto é necessário ter alguns pré-requisitos instalados:  
-- Node.js (v20 ou superior)
-- JDK 17 ou 21 (LTS)
-- Android Studio ou instalar aplicativo Expo Go no celular (Android/iOS) ou emulador configurado
-- Se escolher instalar o Android Studio faça essas configurações: 
-SDK Platform (Android 13+)
-Android SDK Build-Tools
-Criar AVD (Pixel 5 ou similar)
-
+- Node.js (v18 ou superior)  
+- JDK 17 ou 21 (LTS)  
+- Android Studio ou aplicativo Expo Go no celular (Android/iOS) ou emulador configurado  
 - Visual Studio Code (VS Code)  
-- Expo CLI (`npm install -g expo-cli`)  
+
+Se escolher instalar o Android Studio faça essas configurações:  
+- SDK Platform (Android 13+)  
+- Android SDK Build-Tools  
+- Criar AVD (Pixel 5 ou similar)  
 
 **Passo a passo:**  
 1. Clonar o repositório:  
-   git clone <https://github.com/mimasc/-fiap-cpad-cp1-FIAP-cafe>  
-   cd -fiap-cpad-cp2-FIAP-cafe  
-   cd meu-primeiro-app   
-3. Instalar dependências:  
-   npm install
-4. Rodar o projeto:  
-   npm start
-5. Escanear o QR Code com o Expo Go ou abrir no emulador ou apertar "a" no terminal para abrir o app no Android Studio
+   `git clone https://github.com/mimasc/-fiap-cpad-cp2-FIAP-cafe.git`
 
+2. Entrar na pasta do projeto:  
+   `cd -fiap-cpad-cp2-FIAP-cafe`  
+   `cd meu-primeiro-app`
+
+3. Instalar dependências:  
+   `npm install`
+
+4. Rodar o projeto:  
+   `npx expo start`
+
+5. Escanear o QR Code com o Expo Go ou apertar `a` no terminal para abrir no emulador Android.
 ---
 
 ## 🎬 Demonstração Visual
